@@ -1,3 +1,9 @@
+body{
+    background-color: #595453;
+    color: white;
+    font-family: Georgia, Garamond, sans-serif;
+}
+
 .row{
     display: flex;
 }
@@ -18,11 +24,6 @@
 
 .validator{
     display: flex;
-}
-
-body{
-    background-color: #595453;
-    color: white;
 }
 
 h1{
