@@ -1,4 +1,7 @@
 body{
+    background-image: url('images/silverware.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     background-color: white;
     color: #404040;
     font-size: 11pt;
