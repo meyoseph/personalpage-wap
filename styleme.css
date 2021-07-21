@@ -16,6 +16,10 @@
     padding: 20px;
 }
 
+.validator{
+    display: flex;
+}
+
 body{
     background-color: #595453;
     color: white;
