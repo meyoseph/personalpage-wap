@@ -12,15 +12,18 @@ h1, h2, h3{
     font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     text-decoration: underline;
 }
+
 h1{
-    font-size: 22pt;
+    font-size: 20pt;
     font-style: bold;
     text-align: center;
 }
+
 h2{
     text-align: left;
     font-size: 18pt;
 }
+
 a{
     color: #A4A400;
 }
