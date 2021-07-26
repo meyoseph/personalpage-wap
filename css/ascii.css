@@ -1,0 +1,42 @@
+body{
+    background-color: #CCCCFF;
+    font: bold 14pt sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    width: 48%;
+    font-weight: bold;
+}
+
+.header{
+    font: bold 16pt sans-serif;
+    margin: 0;
+}
+
+.controlPane{
+    display: flex;
+    flex-flow: row;
+}
+
+.controlPane fieldset{
+    border-width: 5px;
+    border-color: black;
+}
+
+#textArea{
+    width: 90%;
+    height: 400px;
+    font: bold 12pt monospace;
+}
+
+.validators{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+}

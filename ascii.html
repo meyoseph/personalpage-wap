@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASCIImation</title>
+    <link href="css/ascii.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="header">
+    <h1>CSE 190 M ASCII Animation Viewer</h1>
+</div>
+<textarea cols="80" id="textArea" rows="20"></textarea>
+<div class="controlPane">
+    <fieldset>
+        <legend>Play Controls:</legend>
+        <button class="btnGp" id="btnPCSt">Start</button>
+        <button class="btnGp" id="btnPCSp" disabled>Stop</button>
+    </fieldset>
+    <fieldset>
+        <legend>Animation:</legend>
+        <select id="selAnim">
+            <option>Blank</option>
+            <option>Exercise</option>
+            <option>Juggler</option>
+            <option>Bike</option>
+            <option>Dive</option>
+            <option>Custom</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Size:</legend>
+        <select id="selSize">
+            <option>Tiny</option>
+            <option>Small</option>
+            <option selected>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+            <option>XXL</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Speeds:</legend>
+        <label> <input id="chBox" type="checkbox">Turbo</label>
+    </fieldset>
+</div>
+<script src="js/ascii.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
