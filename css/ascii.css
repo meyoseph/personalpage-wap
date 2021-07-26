@@ -12,11 +12,6 @@ button{
     font-weight: bold;
 }
 
-.header{
-    font: bold 16pt sans-serif;
-    margin: 0;
-}
-
 .controlPane{
     display: flex;
     flex-flow: row;
@@ -25,6 +20,11 @@ button{
 .controlPane fieldset{
     border-width: 5px;
     border-color: black;
+}
+
+.header{
+    font: bold 16pt sans-serif;
+    margin: 0;
 }
 
 #textArea{

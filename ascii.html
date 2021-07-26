@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="header">
-    <h1>CSE 190 M ASCII Animation Viewer</h1>
+    <h1>ASCII Animation Viewer</h1>
 </div>
 <textarea cols="80" id="textArea" rows="20"></textarea>
 <div class="controlPane">
@@ -20,11 +20,12 @@
         <legend>Animation:</legend>
         <select id="selAnim">
             <option>Blank</option>
-            <option>Exercise</option>
-            <option>Juggler</option>
-            <option>Bike</option>
+            <option selected>Bike</option>
             <option>Dive</option>
             <option>Custom</option>
+            <option>Exercise</option>
+            <option>Juggler</option>
+            
         </select>
     </fieldset>
     <fieldset>
@@ -42,6 +43,10 @@
         <legend>Speeds:</legend>
         <label> <input id="chBox" type="checkbox">Turbo</label>
     </fieldset>
+</div>
+<div id="validator">
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmeyoseph.github.io%2Fpersonalpage-wap%2Fascii.html"><img src="images/w3c-html.png" alt="Valid HTML5" /></a> <br />
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmeyoseph.github.io%2Fpersonalpage-wap%2Fascii.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="images/w3c-css.png" alt="Valid CSS" /></a>
 </div>
 <script src="js/ascii.js"></script>
 <script src="js/animations.js"></script>
