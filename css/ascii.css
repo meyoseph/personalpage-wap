@@ -33,7 +33,7 @@ button{
     font: bold 12pt monospace;
 }
 
-.validators{
+#validator{
     position: absolute;
     right: 0;
     bottom: 0;
