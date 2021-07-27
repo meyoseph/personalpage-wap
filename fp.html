@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functional Programming</title>
+    <meta charset="utf-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // initialize mocha
+      mocha.setup("bdd");
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+    </script>
+
+    <script>
+      function sum() {
+        var args = Array.prototype.slice.call(arguments);
+        return args.reduce((acc, current) => acc + current, 0);
+      }
+      function multiply() {
+        var args = Array.prototype.slice.call(arguments);
+        return args.reduce((acc, current) => acc * current, 1);
+      }
+      function reverse(str) {
+        return str.split("").reduce((acc, current) => current + acc, "");
+      }
+      function filterLongWords(words, i) {
+        return words.filter((e) => e.length > i);
+      }
+    </script>
+    <script>
+      describe("sum", function () {
+        it("takes number args, and returns the sum", function () {
+          assert.equal(10, sum(1, 2, 3, 4));
+        });
+      });
+      describe("multiply", function () {
+        it("takes number args, and returns the product of them", function () {
+          assert.equal(6, multiply(1, 2, 3));
+        });
+      });
+      describe("reverse", function () {
+        it("takes a string, and returns the reverse", function () {
+          assert.equal("soj", reverse("jos"));
+        });
+      });
+      describe("reverse", function () {
+        it("takes a string, and returns the reverse", function () {
+          assert.equal("soj", reverse("jos"));
+        });
+      });
+      describe("filter Longwords", function () {
+        it("takes a array and i, and returns the longest words as an array", function () {
+          var expected = JSON.stringify(["yoseph", "birhanu"]);
+          var actual = filterLongWords(["yoseph", "birhanu", "jos"], 4);
+          assert.equal(expected, JSON.stringify(actual));
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="mocha"></div>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
