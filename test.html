@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>W2D1 Quiz</title>
+    <title>W2D2 Quiz</title>
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
@@ -17,45 +17,30 @@
     </script>
 
     <script>
-        // write your code for the function earliestSpace() here
-        // remember it has to take 3 strings, not an array!
-        function earliestSpace(a, b, c){
-            var spaceCount1 = (a.split(" ").length - 1);
-            var spaceCount2 = (b.split(" ").length - 1);
-            var spaceCount3 = (c.split(" ").length - 1);
-            var countArray = [];
-            var word;
-            countArray.push(spaceCount1);
-            countArray.push(spaceCount2);
-            countArray.push(spaceCount3);
-            const min = Math.min(...countArray)
-            if(spaceCount1 == min){
-                word = a;
-            }else if(spaceCount2 == min){
-                word = b;
-            }else{
-                word = c;
-            }
-            return word;
-        }
-
-        const multiply = (num1, num2) => num1 * num2;
-        const mult = function(num1, num2){
-            return num1 * num2;
+        // write your code for the function longestNoSapce() here
+        // remember it can take any amount of strings!
+        function longestNoSpace(...strings){
+            return null;
         };
-
-        const mult3 = (num1, num2) => {
-            return num1 * num2;
-        };
-        
     </script>
+    <script src="code.js"></script>
     <script>
-        describe("earliestSpace", function () {
-            it("takes 3 strings, and returns whicherver string has a space character at the lowest index",
-                function () {
-                    assert.equal("bla bla bla", earliestSpace("This is a test", "Where it checks for spaces",
-                        "bla bla bla"));
-                });
+        describe("longestNoSpace", function () {
+            it("returns 0 if given zero parameters", () => {
+                assert.equal(longestNoSpace(), 0);
+            });
+            it("returns 0 if given a single string that contains a space", () => {
+                assert.equal(longestNoSpace("a test"), 0);
+            })
+            it("returns 0 if given only strings that contains spaces", () => {
+                assert.equal(longestNoSpace("this is","a test"), 0);
+            });
+            it("returns the length of the string if given a single string without a space", () => {
+                assert.equal(longestNoSpace("hello"), 5);
+            });
+            it("returns the length of the longest string if given multiple strings without spaces", () => {
+                assert.equal(longestNoSpace("hello", "world!"), 6);
+            });
         });
 
     </script>
