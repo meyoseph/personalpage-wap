@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#main-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+#circle-container {
+  position: relative;
+}
+.circle {
+  position: absolute;
+}
+#input-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  z-index: 100;
+  border-top: solid 1px black;
+  background-color: cornflowerblue;
+}
+input {
+  font-size: 18px;
+  border-radius: 4px;
+}
+button {
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 15px;
+}
